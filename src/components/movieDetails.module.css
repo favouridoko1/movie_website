@@ -1,0 +1,78 @@
+.detailsContainer {
+    color: #fff;
+    display: flex;
+    background-color: #000000f1;
+    opacity: 0.9;
+    padding: 35px 0px;
+    margin-top: 12px;
+}
+
+/* .parent{
+        /* background-image: url(`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`);
+        background-repeat: no-repeat;
+        background-size: cover;
+         opacity: 0.9; */
+        /* dmx-style:background-image="'url(/path/to/images/' + dynamic_value + ')'" */
+/* }  */ 
+
+
+.linkContainer {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+
+}
+
+.linkStyle {
+    box-shadow: 2px 3px 6px rgba(152, 153, 152, 0.2);
+    border-radius: 5px;
+    border: 1px solid #383838;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 4px;
+}
+
+.images {
+    border-radius: 15px;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+    margin-left: 25px;
+}
+
+.details {
+    color: #fff;
+    margin-left: 80px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.details::before {
+    content: "";
+    position: absolute;
+    opacity: 0.5;
+    background-color: #383838;
+}
+
+.releaseDate {
+    font-size: 14px;
+}
+
+.tagline {
+    font-family:  'Segoe UI', Roboto,  'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #7e7e7e;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.overviewContainer {
+   margin-right: 5px;
+}
+
+.overviewContainer h2{
+    margin-bottom: -5px;
+}
+
+.producers {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+}

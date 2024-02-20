@@ -1,0 +1,24 @@
+
+@media only screen and (max-width:750px) {
+    .parentContainer {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width:750px) {
+    .parentContainer {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }  
+}
+
+@media only screen and (min-width:900px) {
+    .parentContainer {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
