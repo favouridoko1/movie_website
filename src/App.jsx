@@ -9,7 +9,7 @@ import { Route, Router, Routes } from "react-router-dom";
 
 function App() {
 const [movieData, setMovieData] = useState([]);
-const [movieId, setMovieId] = useState("1211957");
+const [movieId, setMovieId] = useState(1211957);
 
 
   return (

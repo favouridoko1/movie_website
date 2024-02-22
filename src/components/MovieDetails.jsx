@@ -19,7 +19,7 @@ export default function MovieDetails({ movieId }) {
     return (
         <div >
             <div className={styles.linkContainer}>
-                <Link className={styles.linkStyle} to="/movies">Back to Home</Link>   
+                <Link className={styles.linkStyle} to="/movies">Back to Movies</Link>   
             </div>
 
             <div style={{backgroundImage:`url(https://image.tmdb.org/t/p/w500${movie.backdrop_path})`,

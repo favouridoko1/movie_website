@@ -3,14 +3,15 @@ import styles from './searchBar.module.css';
 import MovieList from "./MovieList";
 
 const api_key = 'bbbfa863fae709a9395aa30f77884fc6';
-const apiUrl = 'https://api.themoviedb.org/3/';
+const apiUrl = 'https://api.themoviedb.org/3/search/movie';
 const queryS = 'https://api.themoviedb.org/3/search/movie?query=Jack+Reacher&api_key=bbbfa863fae709a9395aa30f77884fc6';
 
 export default function SearchBar({ movieData, setMovieData, setMovieId, movieId }) {
-    const [query, setQuery]= useState("The");
+    const [query, setQuery]= useState("witch");
     useEffect(()=>{
         async function fetchApi(endpoint) {
-            const res = await fetch(`${apiUrl}${endpoint}?api_key=${api_key}&language=en-US`);
+            // const res = await fetch(`${apiUrl}${endpoint}?api_key=${api_key}&language=en-US`);
+            const res = await fetch(`${apiUrl}?query=${query}&api_key=${api_key}`)
             
 
             const data = await res.json();

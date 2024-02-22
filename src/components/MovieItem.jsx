@@ -16,16 +16,15 @@ export default function MovieItem({ movie, setMovieId, movieId }) {
 
             </div>
             {
-                <div className={styles.moviesContainer}>    
-                    
-                     <div className={styles.imageContainer}>
-                        {
-                          movie.poster_path ? <img onClick={()=> {
+                <div className={styles.moviesContainer} >    
+                     <div className={styles.imageContainer} onClick={()=> {
                                 console.log(movie.id)
                                 navigate('/movieDetails')
                                 setMovieId(movie.id)
                             }  
-                            }   className={styles.images} src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`} alt="" /> : <img src="../images/no-image.jpg" alt="" />
+                            }>
+                        {
+                          movie.poster_path ? <img    className={styles.images} src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`} alt="" /> : <img src="../images/no-image.jpg" alt="" />
                         }  
                      </div>
                     

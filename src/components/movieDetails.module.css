@@ -1,25 +1,16 @@
 .detailsContainer {
+    background-color: #000000f1;
     color: #fff;
     display: flex;
-    background-color: #000000f1;
+    margin-top: 12px;
     opacity: 0.9;
     padding: 35px 0px;
-    margin-top: 12px;
 }
 
-/* .parent{
-        /* background-image: url(`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`);
-        background-repeat: no-repeat;
-        background-size: cover;
-         opacity: 0.9; */
-        /* dmx-style:background-image="'url(/path/to/images/' + dynamic_value + ')'" */
-/* }  */ 
-
-
 .linkContainer {
+    font-weight: bold;
     margin-top: 30px;
     margin-left: 20px;
-    font-weight: bold;
 
 }
 
@@ -46,10 +37,10 @@
 }
 
 .details::before {
-    content: "";
-    position: absolute;
-    opacity: 0.5;
     background-color: #383838;
+    content: "";
+    opacity: 0.5;
+    position: absolute;
 }
 
 .releaseDate {
@@ -57,10 +48,10 @@
 }
 
 .tagline {
-    font-family:  'Segoe UI', Roboto,  'Open Sans', 'Helvetica Neue', sans-serif;
     color: #7e7e7e;
-    font-weight: 500;
+    font-family:  'Segoe UI', Roboto,  'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
+    font-weight: 500;
 }
 
 .overviewContainer {

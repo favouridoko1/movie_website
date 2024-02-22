@@ -1,5 +1,7 @@
 import styles from './welcomePage.module.css'
+import { useNavigate } from 'react-router-dom'
 export default function WelcomePage() {
+    const navigate = useNavigate()
     return (
         <div className={styles.parent}>
             <div className={styles.modelContainer}>
@@ -7,12 +9,13 @@ export default function WelcomePage() {
                     <p className={styles.fbox}>fbok</p>
                         <input type="text" placeholder="Search movies..."/>
                     <p>Watch Movies Online in HD For Free!</p>
-                    <button>Go to Homepage</button>  
+                    <button onClick={()=> {
+                        navigate('/movies')
+                    }}>Go to Homepage ▶️</button>  
 
                 </div>
                 <div>
                     <p>
-
                         Welcome to Fbox, the ultimate destination for movie lovers! Get ready to unlock a world of cinematic wonders with our extensive database and a host of exciting features. With an unparalleled collection of films spanning genres, eras, and languages, Fbox ensures there's something for every taste and mood.
                     </p>
                     <p>

@@ -1,27 +1,58 @@
 .parent {
-    color: #929191;
     border: 1px solid #646364;
+    color: #929191;
     display: flex;
+    font-size: 14px;
     justify-content: center;
+    opacity: 0.7;
     
 }
 
-.modelHeader {
+
+.modelContainer {
     align-items: center;
+    background-color: #0b0b1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 850px;
+    padding: 60px 40px;
 }
 
-
 .fbox {
-    color: rgb(182, 156, 7);
+    color: #ddbc00;
     font-size: 3em;
     font-weight: bold;
 }
 
-.modelContainer {
-    background-color: rgb(11, 11, 31);
-    max-width: 800px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.modelHeader {
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
+
+input {
+    border-radius: 15px;
+    border: none;
+    background-color: #131335;
+    color: #ddbc00;
+    font-size: 16px;
+    outline: none;
+    padding: 10px 50px;
+    width: 400px;
+}
+
+
+button {
+    background-color: #ddbc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #414141;
+    font-weight:800;
+    padding: 10px 40px;
+}
+
+/* .span {
+    
+} */
