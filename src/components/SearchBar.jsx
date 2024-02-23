@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import styles from './searchBar.module.css';
 import MovieList from "./MovieList";
+import { Link } from "react-router-dom";
 
 const api_key = 'bbbfa863fae709a9395aa30f77884fc6';
 const apiUrl = 'https://api.themoviedb.org/3/search/movie';
 const popularMovieURL = 'https://api.themoviedb.org/3/';
-
-const queryS = 'https://api.themoviedb.org/3/search/movie?query=Jack+Reacher&api_key=bbbfa863fae709a9395aa30f77884fc6';
 
 export default function SearchBar({ movieData, setMovieData, setMovieId, movieId }) {
     const [query, setQuery]= useState("");
@@ -32,8 +31,11 @@ export default function SearchBar({ movieData, setMovieData, setMovieId, movieId
  
     return (
         <>
+        <div className={styles.linkContainer}>
+            <Link className={styles.link} to="/">Go to About</Link>
+        </div>
         <div className={styles.searchContainer}>
-            <input className={styles.input} type="text" value={query} onChange={(e)=> setQuery(e.target.value) } placeholder="Search movies" />
+            <input className={styles.input} type="text" value={query} onChange={(e)=> setQuery(e.target.value) } placeholder="Search movies..." />
         </div>
 
         <MovieList setMovieId={setMovieId} movieData={movieData} setMovieData={setMovieData} movieId={movieId} />

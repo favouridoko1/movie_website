@@ -7,7 +7,7 @@ export default function WelcomePage() {
             <div className={styles.modelContainer}>
                 <div className={styles.modelHeader}>
                     <p className={styles.fbox}>fbok</p>
-                        <input type="text" placeholder="Search movies..."/>
+                        {/* <input type="text" placeholder="Search movies..."/> */}
                     <p>Watch Movies Online in HD For Free!</p>
                     <button onClick={()=> {
                         navigate('/movies')
