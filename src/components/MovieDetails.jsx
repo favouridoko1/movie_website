@@ -27,7 +27,7 @@ export default function MovieDetails({ movieId }) {
                     backgroundSize: "cover", }}>
                 <div  className={styles.detailsContainer}>
                     {
-                        movie.poster_path ? <img className={styles.images} src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`} alt="" /> : <img src="../images/no-image.jpg" alt="" />
+                        movie.poster_path ? <img className={styles.images} src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`} alt="" /> : <img src="./" alt="" />
                     }
                     
                     <div className={styles.details}>

@@ -24,7 +24,7 @@ export default function MovieItem({ movie, setMovieId, movieId }) {
                             }  
                             }>
                         {
-                          movie.poster_path ? <img    className={styles.images} src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`} alt="" /> : <img src="../images/no-image.jpg" alt="" />
+                          movie.poster_path ? <img    className={styles.images} src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`} alt="" /> : <img src="./no-image.jpg" alt="" />
                         }  
                      </div>
                     

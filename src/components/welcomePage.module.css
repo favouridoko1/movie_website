@@ -4,10 +4,7 @@
     display: flex;
     font-size: 14px;
     justify-content: center;
-    opacity: 0.7;
-    
 }
-
 
 .modelContainer {
     align-items: center;
@@ -23,6 +20,7 @@
     color: #ddbc00;
     font-size: 3em;
     font-weight: bold;
+    margin-bottom: -1px;
 }
 
 .modelHeader {
@@ -30,18 +28,6 @@
     display: flex;
     flex-direction: column;
 }
-
-input {
-    border-radius: 15px;
-    border: none;
-    background-color: #131335;
-    color: #ddbc00;
-    font-size: 16px;
-    outline: none;
-    padding: 10px 50px;
-    width: 400px;
-}
-
 
 button {
     background-color: #ddbc00;
@@ -51,8 +37,5 @@ button {
     color: #414141;
     font-weight:800;
     padding: 10px 40px;
+    margin-top: 10px;
 }
-
-/* .span {
-    
-} */
