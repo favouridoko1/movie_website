@@ -11,14 +11,13 @@
     border: 1px solid rgb(19, 19, 52, 0.2);
     color: #ddbc00;
     text-decoration: none;
-    /* display: none; */
     padding: 10px 15px;
 }
 
-.searchContainer {
-    margin: 15px  auto 20px auto;
+.inputContainer {
+    margin: 15px auto 20px auto;
     position: relative;
-    width: 400px;
+    width: 40%;
 }
 
 .input {
@@ -31,4 +30,11 @@
     outline: none;
     padding: 10px 50px;
     width: 100%;
+}
+
+@media screen and (max-width:769px) {
+    .linkContainer {
+        margin-bottom: 30px;
+    }
+
 }
