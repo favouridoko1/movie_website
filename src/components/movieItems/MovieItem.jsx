@@ -9,7 +9,7 @@ export default function MovieItem({ movie, setMovieId, movieId }) {
 
   return (
     <>
-      <div className={styles.parent}>
+      <div className={styles.container}>
         <div className={styles.Contain}></div>
         {
           <div className={styles.moviesContainer}>

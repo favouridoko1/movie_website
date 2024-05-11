@@ -1,17 +1,21 @@
 .linkContainer {
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 24px;
     margin-left: 20px;
 }
 
 .link {
-    background-color: #131335;
     box-shadow: 2px 3px 3px rgba(102, 102, 117, 0.2);
     border-radius: 5px;
-    border: 1px solid rgb(19, 19, 52, 0.2);
-    color: #ddbc00;
+    border: 1px solid #ddbc00;
+    color: #e4e4e4;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 12px 15px;
+}
+
+.link:hover {
+    background-color: #ddbc00;
+    transition: 0.4s;
 }
 
 .inputContainer {

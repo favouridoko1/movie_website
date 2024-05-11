@@ -39,3 +39,6 @@ button {
     padding: 10px 40px;
     margin: 10px;
 }
+button:hover {
+    background-color: #b3a244;
+}
