@@ -40,7 +40,7 @@ export default function SearchBar({
     <>
       <div className={styles.linkContainer}>
         <Link className={styles.link} to="/">
-          Go to About
+          Go to Home
         </Link>
       </div>
       <div className={styles.inputContainer}>

@@ -4,7 +4,7 @@ import SearchBar from "./components/search/SearchBar";
 import "./App.module.css";
 import MovieDetails from "./components/movieDetails/MovieDetails";
 import { Route, Router, Routes } from "react-router-dom";
-import PageNotFound from "../any/PageNotFound";
+import PageNotFound from "./components/pageNotFound/PageNotFound";
 
 function App() {
   const [movieData, setMovieData] = useState([]);
@@ -14,7 +14,6 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<WelcomePage />} />
-        <Route path="*" element={<PageNotFound />} />
         <Route
           path="/movies"
           element={
@@ -26,10 +25,12 @@ function App() {
             />
           }
         />
+
         <Route
           path="/movieDetails"
           element={<MovieDetails movieId={movieId} />}
         />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );

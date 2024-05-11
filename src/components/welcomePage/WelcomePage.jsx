@@ -10,7 +10,7 @@ export default function WelcomePage() {
                 <p>Watch Movies Online in HD For Free!</p>
                 <button onClick={()=> {
                     navigate('/movies')
-                    }}>Go to Homepage ▶️</button>
+                    }}>Go to Movies ▶️</button>
             </div>
             <div>
                 <p>
