@@ -1,10 +1,8 @@
-import MovieDetails from "../movieDetails/MovieDetails";
 import styles from "./movieItem.module.css";
 import textTranformPipe from "../utils/utils";
+import { useNavigate } from "react-router-dom";
 
-import { Routes, Route, useNavigate } from "react-router-dom";
-
-export default function MovieItem({ movie, setMovieId, movieId }) {
+export default function MovieItem({ movie, setMovieId }) {
   const navigate = useNavigate();
 
   return (
@@ -16,7 +14,6 @@ export default function MovieItem({ movie, setMovieId, movieId }) {
             <div
               className={styles.imageContainer}
               onClick={() => {
-                console.log(movie.id);
                 navigate("/movieDetails");
                 setMovieId(movie.id);
               }}

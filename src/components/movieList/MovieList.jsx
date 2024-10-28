@@ -1,6 +1,6 @@
 import MovieItem from "../movieItems/MovieItem";
 import styles from "./movieList.module.css";
-export default function MovieList({ movieData, setMovieId, movieId }) {
+export default function MovieList({ movieData, setMovieId }) {
   return (
     <div>
       <div className={styles.parentContainer}>

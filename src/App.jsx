@@ -3,13 +3,12 @@ import WelcomePage from "./components/welcomePage/WelcomePage";
 import SearchBar from "./components/search/SearchBar";
 import "./App.module.css";
 import MovieDetails from "./components/movieDetails/MovieDetails";
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import PageNotFound from "./components/pageNotFound/PageNotFound";
 
 function App() {
   const [movieData, setMovieData] = useState([]);
   const [movieId, setMovieId] = useState(1211957);
-
   return (
     <div className="App">
       <Routes>
@@ -18,7 +17,6 @@ function App() {
           path="/movies"
           element={
             <SearchBar
-              movieId={movieId}
               movieData={movieData}
               setMovieId={setMovieId}
               setMovieData={setMovieData}

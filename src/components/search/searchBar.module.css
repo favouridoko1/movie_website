@@ -21,7 +21,7 @@
 .inputContainer {
     margin: 15px auto 20px auto;
     position: relative;
-    width: 40%;
+    width: 50%;
 }
 
 .input {
@@ -40,5 +40,7 @@
     .linkContainer {
         margin-bottom: 30px;
     }
-
+    .inputContainer {
+        width: 80%;
+    }
 }
