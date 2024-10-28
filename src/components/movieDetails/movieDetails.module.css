@@ -72,3 +72,44 @@
     font-size: 14px;
     justify-content: space-between;
 }
+
+.loading {
+    font-size: larger;
+    color: #ffffff;
+}
+
+
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #5e5001 50%, #ddbc00 100%);
+    animation: spin 1s linear infinite;
+}
+
+.innerCircle {
+    width: 90%;
+    height: 90%;
+    background-color: #0e0e0e;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
